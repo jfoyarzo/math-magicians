@@ -50,7 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Calculator component design based on [Sparrow's](https://codepen.io/SpallowLiu) calculator.
 
 ## 📝 License
 
