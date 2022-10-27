@@ -9,8 +9,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex: 0 1 60%;
-  min-width: 400px;
-  max-width: 900px;
+  width: 400px;
 }
 
 .buttons,
