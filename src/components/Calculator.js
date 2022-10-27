@@ -2,36 +2,50 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import './calculator.css';
+import calculate from '../logic/calculate';
 
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      total: '0',
+      next: null,
+      operation: null,
+    };
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+  }
+
+  handleButtonClick(e) {
+    const buttonName = e.target.textContent;
+    const newObj = calculate(this.state, buttonName);
+    this.setState(newObj);
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div className="container">
-        <div className="result">0</div>
+        <div className="result">{ next || operation || total}</div>
         <div className="buttons">
-          <span className="button resetBtn">AC</span>
-          <span className="button negative operator">+/-</span>
-          <span className="button operator percent">%</span>
-          <span className="button operator">/</span>
-          <span className="button number">7</span>
-          <span className="button number">8</span>
-          <span className="button number">9</span>
-          <span className="button operator">*</span>
-          <span className="button number">4</span>
-          <span className="button number">5</span>
-          <span className="button number">6</span>
-          <span className="button operator">-</span>
-          <span className="button number">1</span>
-          <span className="button number">2</span>
-          <span className="button number">3</span>
-          <span className="button operator">+</span>
-          <span className="button number zero-btn">0</span>
-          <span className="button number dot">.</span>
-          <span className="button operator">=</span>
+          <button type="button" className="button resetBtn" onClick={this.handleButtonClick}>AC</button>
+          <button type="button" className="button negative operator" onClick={this.handleButtonClick}>+/-</button>
+          <button type="button" className="button operator percent" onClick={this.handleButtonClick}>%</button>
+          <button type="button" className="button operator" onClick={this.handleButtonClick}>÷</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>7</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>8</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>9</button>
+          <button type="button" className="button operator" onClick={this.handleButtonClick}>x</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>4</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>5</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>6</button>
+          <button type="button" className="button operator" onClick={this.handleButtonClick}>-</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>1</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>2</button>
+          <button type="button" className="button number" onClick={this.handleButtonClick}>3</button>
+          <button type="button" className="button operator" onClick={this.handleButtonClick}>+</button>
+          <button type="button" className="button number zero-btn" onClick={this.handleButtonClick}>0</button>
+          <button type="button" className="button number dot" onClick={this.handleButtonClick}>.</button>
+          <button type="button" className="button operator" onClick={this.handleButtonClick}>=</button>
         </div>
       </div>
     );
