@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poor Story', cursive;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 4em;
 }
