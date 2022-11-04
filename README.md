@@ -51,6 +51,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Calculator component design based on [Sparrow's](https://codepen.io/SpallowLiu) calculator.
+- This apps uses the Random Quote Generator API from [arcanemutterings](https://github.com/arcanemutterings), more info [here](https://github.com/arcanemutterings/random-quote-generator-api)
 
 ## 📝 License
 
