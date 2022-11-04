@@ -6,6 +6,12 @@
   padding: 0.5rem 3rem;
 }
 
+.active-link {
+  scale: 1.05;
+  background-color: #f0ebce !important;
+  color: #aa8b56 !important;
+}
+
 .link-wrapper {
   margin: 0;
   padding: 0;
@@ -21,14 +27,28 @@
 }
 
 .nav-li a {
+  font-size: 1.4em;
   display: flex;
   justify-content: center;
-  margin-right: 0.5em;
+  margin-right: 1em;
   align-items: center;
   text-decoration: none;
-  background-color: #AA8B56;
-  color: antiquewhite;
+  background-color: #aa8b56;
+  color: #f0ebce;
   border-radius: 10px;
   width: 10vw;
   height: 7vh;
+  transition: all 0.2s ease-out;
+}
+
+.nav-li a:hover {
+  scale: 1.05;
+  background-color: #f0ebce;
+  color: #aa8b56;
+}
+
+.nav-li a:active {
+  scale: 1.05;
+  background-color: #f0ebce;
+  color: #aa8b56;
 }
