@@ -1,0 +1,21 @@
+.home-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.text-wrapper {
+  width: 50vw;
+  padding: 0 9em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+img {
+  width: 45vw;
+}
+
+p {
+  font-size: 1.5em;
+}
