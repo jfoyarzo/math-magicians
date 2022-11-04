@@ -4,6 +4,7 @@
   width: 100vw;
   justify-content: space-between;
   padding: 0.5rem 3rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .active-link {
@@ -38,6 +39,7 @@
   border-radius: 10px;
   width: 10vw;
   height: 7vh;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-out;
 }
 
@@ -45,10 +47,12 @@
   scale: 1.05;
   background-color: #f0ebce;
   color: #aa8b56;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav-li a:active {
   scale: 1.05;
   background-color: #f0ebce;
   color: #aa8b56;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 }
