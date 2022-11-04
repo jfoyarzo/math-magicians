@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
@@ -11,7 +11,7 @@ root.render(
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Calculator />} />
+        <Route exact path="/calculator" element={<Calculator />} />
       </Routes>
     </Router>
   </React.StrictMode>,
