@@ -11,6 +11,10 @@ A simple React project on its early stages. It will include a calculator compone
 - JavaScript
 - React
 
+## Live version
+
+You can see a deployed version of the app [here](https://jfoyarzo-math-magicians.netlify.app/)
+
 ## Getting Started
 
 To get a local copy, run the following command.
